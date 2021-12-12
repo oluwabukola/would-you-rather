@@ -57,7 +57,7 @@ export const Poll = ({question}) => {
                         <>
                         <h5 className='sub__right-text'>Would you rather</h5>
                         <form className='poll-form'  onSubmit={handleSubmit}>
-                                <div className="form-group">
+                                <div >
                                 <label>                                
                                 <input 
                                     type="radio"
@@ -74,7 +74,7 @@ export const Poll = ({question}) => {
                                 
                                 </label>
                                 </div>
-                                <div className="form-group">
+                                <div>
                                 <label>                                
                                 <input 
                                     type="radio"
