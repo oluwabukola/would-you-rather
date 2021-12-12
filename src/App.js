@@ -48,9 +48,7 @@ function App() {
       <Route path='/poll' exact >
       <Poll/>
       </Route>
-      {/* <Route path='/NotFound'>
-        <NotFound/>
-        </Route> */}
+     
       <Route exact path='*'>
       <NotFound/>
       </Route>

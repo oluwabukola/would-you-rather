@@ -21,10 +21,6 @@ const history = useHistory();
     history.push("/");
   };
 
- 
-  const authenticatedUserName = localStorage.getItem('userName');
-  
-
     return (
         <div className='navigationContainer'>
           {authedUser &&
@@ -40,7 +36,7 @@ const history = useHistory();
       <Link to='/leaderboard' className='linked'>Leaderboard</Link>
       <Nav.Link href="#" className='linked'> 
       <div className='userprofile'>
-      <div className='user__name'>{authenticatedUserName}</div>
+      <div className='user__name'>{authedUser.name}</div>
         <div className='imageContainer'>
         <img src={authedUser.avatarURL}  alt='user-image' style={{width:'100%', height: '100%'}}/>
         </div>

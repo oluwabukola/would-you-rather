@@ -67,7 +67,7 @@ export const Poll = ({question}) => {
                                         e.target.value,
                                         setDisable(false)
                                         )}
-                                    defaultChecked={buttonVal === question.optionOne.text}
+                                    
                                 />
                                 &nbsp;
                                 {question.optionOne.text}
@@ -82,7 +82,7 @@ export const Poll = ({question}) => {
                                     value="optionTwo"
                                     onChange={e => setButtonVal(e.target.value,
                                         setDisable(false))}
-                                    defaultChecked={buttonVal === question.optionOne.text}
+                                    
                                 />
                                 &nbsp;
                                 {question.optionTwo.text}
